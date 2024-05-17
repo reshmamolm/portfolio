@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar" id="navcontainer">
+            <img src="./assets/images/a-business-woman-who-explains-drawings_csp12051090.jpg"  height="150" width="150px" alt="">
+            <ul>
+                <li><a href="#home" class="link">HOME</a></li>
+                <li><a href="#about" class="link">ABOUT</a></li>
+                <li><a href="#skills" class="link">SKILLS</a></li>
+                <li><a href="#contact" class="link">CONTACT</a></li>
+            </ul>
+        </nav>
+         <!-- home section -->
+       <section id="home">
+            <div class="title">
+                <h1> I'am Ana <span id="last_name">Steel</span></h1>
+                <p>This is my official porfolio website to escribe all<br> 
+                   Details and work experience in Web Development</p>
+                   <a href="./assets/images/dummy.pdf" target="_blank">DOWNLOAD CV</a>
+            </div>
+            <div class="image">
+                <img src="./assets/images/shape.png" class="imaggroup" alt=""  id="shape">
+                <img src="./assets/images/girl.png" class="imaggroup" alt="" id="girl">
+
+            </div>
+            <!-- about section -->
+            <section id="about">
+                <div class="heading">
+                    <h1>About Me</h1>
+                    <h3>Introduction</h3>
+                </div>
+                <div class="about_container">
+                    <div class="abt_img">
+                        <img src="./assets/images/about.avif" alt="">
+                    </div>
+                    <div class="about_details">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium mollitia quis, assumenda rem et quo laboriosam repudiandae velit molestias tempora! Cum, odit eaque! Aliquam facilis enim harum natus sequi quod.</p>
+                        <div class="information">
+                            <div class="info_box">
+                                <i class="fa-solid fa-user"></i>
+                                <span>ANA steel</span>
+
+                            </div>
+                            <div class="info_box">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>7561812898</span>
+
+                            </div>
+                            <div class="info_box">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>reshmamolm2001@gmail.com</span>
+
+                            </div>
+                            <div class="info_box">
+                                <i class="fa-brands fa-github"></i>
+                                <span>www.github.com/reshmamol</span>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="skills">
+                <div class="heading">
+                    <h1>Skills</h1>
+                    <h3>My Skill</h3>
+
+                </div>
+                <div class="skill_container">
+                    <div  class="progress-bar">
+                        <div class="bar-container">
+                            <h3>HTML</h3>
+                            <span>95%</span>
+                            <div class="bar"> </div>
+                            <div class="bar html-bar"></div>
+
+                        </div>
+                        <div class="bar-container">
+                            <h3>CSS</h3>
+                            <span>89%</span>
+                            <div class="bar"> </div>
+                            <div class="bar css-bar"></div>
+
+                        </div>
+                        <div class="bar-container">
+                            <h3>JAVA SCRIPT</h3>
+                            <span>70%</span>
+                            <div class="bar"> </div>
+                            <div class="bar js-bar"></div>
+
+                        </div>
+                        <div class="bar-container">
+                            <h3>REACT</h3>
+                            <span>89%</span>
+                            <div class="bar"> </div>
+                            <div class="bar react-bar"></div>
+
+                        </div>
+
+                    </div>
+                    <div class="skill-image">
+                        <img src="./assets/images/skills.webp" alt="">
+
+                    </div>
+
+                </div>
+
+            </section >
+            <section id="contact">
+            <div class="heading">
+                <h1>Contact</h1>
+                <h3>My Contact</h3>
+
+            </div>
+            <div class="icon-set">
+                <div class="icon">
+                   <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <div class="icon">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                 </div>
+                 <div class="icon">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                 </div>
+                 <div class="icon">
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                 </div>
+                 <div class="icon">
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                 </div>
+                 <div class="icon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                 </div>
+
+
+            </div>
+
+        </section>
+        <!-- footer -->
+        <footer>
+            <p> &copy; My Portfolio design 2024,All Rights Reserved &#174; Ana Steel </p>
+            <div class="up-arrow">
+                <a href="#navcontainer"><i class="fa-solid fa-arrow-up fa-2x"></i></a>
+
+            </div>
+
+        </footer>
+    </div>
+</body>
+</html>
